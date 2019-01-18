@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Số Nguyên Tố đầu tiên</title>
+</head>
+<body>
+
+  <script language="javascript">
+  var nubers =20;
+  var n=2;
+  var So_Nguyen_to_tim_duoc =0;
+  while(So_Nguyen_to_tim_duoc <20){
+    if (n===2 || n===3 || n===5 || n===7 )  {
+      document.write(n);
+      document.write("<br>");
+      n++;
+      So_Nguyen_to_tim_duoc ++;
+    }
+    else {
+      if (n%2==0 || n%3==0 || n%5==0 || n%7==0) {
+      n++;
+      } else{
+        document.write(n);
+        document.write("<br>");
+        n++;
+        So_Nguyen_to_tim_duoc ++;
+      }
+    }
+  }
+
+</script>
+</body>
+</html>

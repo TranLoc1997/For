@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>JQuery assignment 3</title>
+  	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta name="description" content="jquery assignment 3 puzzle">
+  	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Adam Shechter">
+    <link rel='stylesheet' type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel='stylesheet' type="text/css" href='./css/style.css'>
+    <script type="text/javascript" src="./js/jquery-1.12.2.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
+  </head>
+  
+  <body>
+  <div class="container-fluid">
+    <div class="puzzles">
+      <img id="img1" src="./img/meo1.jpg" alt="" />
+      <img id="img2" src="./img/meo2.jpg" alt="" />
+      <img id="img3" src="./img/meo3.jpg" alt="" />
+      <img id="img4" src="./img/meo4.jpg" alt="" />
+      <img id="img5" src="./img/meo5.jpg" alt="" />
+    </div>
+  </div>
+  <script>
+	var main = function () {
+
+	   var number = Math.floor((Math.random() * 11))+".jpg";
+	   $("#img1").click(function(){
+	    document.getElementById("img1").src=number;
+	   });
+	   $("#img2").click(function(){
+	       document.getElementById("img2").src=number;
+	   });
+	   $("#img3").click(function(){
+	       document.getElementById("img3").src=number;
+	   });
+	   $("#img4").click(function(){
+	       document.getElementById("img4").src=number;
+	   });
+	   $("#img5").click(function(){
+	       document.getElementById("img5").src=number;
+	   });
+	}
+	$(document).ready(main());
+</script>
+  </body>
+</html>
